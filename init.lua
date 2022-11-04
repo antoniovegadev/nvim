@@ -4,9 +4,7 @@ require('user.keymaps')
 require('lualine').setup({
   options = {
     theme = 'onedark',
-    icons_enabled = true,
-    component_seperators = '|',
-    section_seperators = ''
+    icons_enabled = true
   }
 })
 
@@ -15,6 +13,11 @@ require('nvim-treesitter.configs').setup({
     enable = true
   },
   ensure_installed = {
+    'bash',
+    'c',
+    'cpp',
+    'yaml',
+    'swift',
     'json',
     'lua'
   }
@@ -29,16 +32,17 @@ require('indent_blankline').setup({
 require('Comment').setup()
 require('gitsigns').setup()
 
-require "paq" {
-  "savq/paq-nvim";
-  "nvim-treesitter/nvim-treesitter";
+require('paq') {
+  'savq/paq-nvim';
+  'nvim-treesitter/nvim-treesitter';
 
-  "folke/tokyonight.nvim";
-  "joshdick/onedark.vim";
+  'folke/tokyonight.nvim';
+  'joshdick/onedark.vim';
 
-  "nvim-tree/nvim-web-devicons";
-  "nvim-lualine/lualine.nvim";
-  "numToStr/Comment.nvim";
-  "lukas-reineke/indent-blankline.nvim";
-  "lewis6991/gitsigns.nvim";
+  'nvim-tree/nvim-web-devicons';
+  'nvim-lualine/lualine.nvim';
+  'numToStr/Comment.nvim';
+  'lukas-reineke/indent-blankline.nvim';
+  'lewis6991/gitsigns.nvim';
+  'tpope/vim-surround';
 }
