@@ -1,5 +1,5 @@
-vim.env.MYSETTINGS = '/Users/antoniovega/.config/nvim/lua/user/settings.lua'
-vim.env.MYMAPPINGS = '/Users/antoniovega/.config/nvim/lua/user/keymaps.lua'
+vim.env.MYSETTINGS = '~/.config/nvim/lua/user/settings.lua'
+vim.env.MYMAPPINGS = '~/.config/nvim/lua/user/keymaps.lua'
 
 vim.cmd('colorscheme onedark')
 
