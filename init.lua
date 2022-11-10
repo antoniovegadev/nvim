@@ -31,6 +31,7 @@ require('indent_blankline').setup({
 
 require('Comment').setup()
 require('gitsigns').setup()
+require("nvim-tree").setup()
 
 require('paq') {
   'savq/paq-nvim';
@@ -45,4 +46,5 @@ require('paq') {
   'lukas-reineke/indent-blankline.nvim';
   'lewis6991/gitsigns.nvim';
   'tpope/vim-surround';
+  'nvim-tree/nvim-tree.lua';
 }
